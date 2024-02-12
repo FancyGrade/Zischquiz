@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zischquiz</title>
+    <style>
+        body {
+            background-image: url("bierhintergrund.gif");
+            background-repeat: repeat;
+            color: black;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 46px; /* Adjust the font size as desired */
+            text-align: center;
+        }
+        .drink-container {
+            margin-bottom: 20px;
+        }
+        .answer-image {
+            display: none;
+            margin: 0 auto; /* Center horizontally */
+        }
+        .beer-image {
+            position: absolute;
+            animation: spin 10s linear infinite;
+            opacity: 0.7;
+            width: 10%; /* Adjusted size */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Spinning beer images -->
+    <img class="beer-image" src="beer-background1.png" alt="Beer Background 1" style="top: 10%; left: 20%;">
+    <img class="beer-image" src="beer-background2.png" alt="Beer Background 2" style="top: 30%; left: 60%;">
+    <img class="beer-image" src="beer-background3.png" alt="Beer Background 3" style="top: 50%; left: 25%;">
+
+    <div class="drink-container" style="text-align: center;">
+        <h2>Getränk 1</h2>
+        <audio controls>
+            <source src="Bullit_Lemon_Zero_500ml.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="revealAnswer('answer1')">auflösen</button>
+        <img id="answer1" class="answer-image" src="Bullit_Lemon_Zero_500ml.jpg" alt="Bullit Lemon Zero 500ml">
+
+    </div>
+
+    <div class="drink-container" style="text-align: center;">
+        <h2>Getränk 2</h2>
+        <audio controls>
+            <source src="Monster_Rehab_500ml.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="revealAnswer('answer2')">auflösen</button>
+        <img id="answer2" class="answer-image" src="Monster_Rehab_500ml.png" alt="Monster Rehab 500ml">
+
+    </div>
+    <!-- Add similar sections for Drink 2 and Drink 3 -->
+
+    <script>
+        function revealAnswer(answerId) {
+            const answerImage = document.getElementById(answerId);
+            answerImage.style.display = 'block';
+        }
+    </script>
+
+    <h4>Musik</h4>
+    <audio controls>
+        <source src="Musik.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+</body>
+</html>
