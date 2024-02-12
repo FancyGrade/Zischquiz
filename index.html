@@ -61,8 +61,9 @@
         <audio controls>
             <source src="Bullit_Lemon_Zero_500ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer1','image-text1')">auflösen</button>
-        <p id="image-text1" style="display: none; font-size: 18px;">Energy: Bullit Lemon Zero 500ml Kühlschranktemperatur</p>
+        <button onclick="revealAnswer('answer1','image-text1','typ1')">auflösen</button>
+        <p id="typ1" style="display: none; font-size: 25px;">Energy</p>
+        <p id="image-text1" style="display: none; font-size: 18px;">Bullit Lemon Zero 500ml Kühlschranktemperatur</p>
         <img id="answer1" class="answer-image" src="Bullit_Lemon_Zero_500ml.jpg" alt="Bild">
     </div>
     
@@ -72,8 +73,9 @@
         <audio controls>
             <source src="Heineken_330ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer2','image-text2')">auflösen</button>
-        <p id="image-text2" style="display: none; font-size: 18px;">Bier: Heineken 330ml Ladentemperatur</p>
+        <button onclick="revealAnswer('answer2','image-text2','typ2')">auflösen</button>
+        <p id="typ2" style="display: none; font-size: 25px;">Bier</p>
+        <p id="image-text2" style="display: none; font-size: 18px;">Heineken 330ml Ladentemperatur</p>
         <img id="answer2" class="answer-image" src="Heineken_330ml.png" alt="Bild">
     </div>
 
@@ -83,8 +85,9 @@
         <audio controls>
             <source src="Monster_Rehab_500ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer3','image-text3')">auflösen</button>
-        <p id="image-text3" style="display: none; font-size: 18px;">Energy: Monster Rehab 500ml Kühlschranktemperatur</p>
+        <button onclick="revealAnswer('answer3','image-text3','typ3')">auflösen</button>
+        <p id="typ3" style="display: none; font-size: 25px;">Energy</p>
+        <p id="image-text3" style="display: none; font-size: 18px;">Monster Rehab 500ml Kühlschranktemperatur</p>
         <img id="answer3" class="answer-image" src="Monster_Rehab_500ml.png" alt="Bild">
     </div>
     
@@ -94,8 +97,9 @@
         <audio controls>
             <source src="Monster_Hamilton_500ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer4','image-text4')">auflösen</button>
-        <p id="image-text4" style="display: none; font-size: 18px;">Energy: Monster Hamilton 500ml Kühlschranktemperatur</p>
+        <button onclick="revealAnswer('answer4','image-text4','typ4')">auflösen</button>
+        <p id="typ4" style="display: none; font-size: 25px;">Energy</p>
+        <p id="image-text4" style="display: none; font-size: 18px;">Monster Hamilton 500ml Kühlschranktemperatur</p>
         <img id="answer4" class="answer-image" src="Monster_Hamilton_500ml.png" alt="Bild">
     </div>
 
@@ -105,8 +109,9 @@
         <audio controls>
             <source src="Tyskie_500ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer5','image-text5')">auflösen</button>
-        <p id="image-text5" style="display: none; font-size: 18px;">Bier: Tyskie 500ml Ladentemperatur</p>
+        <button onclick="revealAnswer('answer5','image-text5','typ5')">auflösen</button>
+        <p id="typ5" style="display: none; font-size: 25px;">Bier</p>
+        <p id="image-text5" style="display: none; font-size: 18px;">Tyskie 500ml Ladentemperatur</p>
         <img id="answer5" class="answer-image" src="Tyskie_500ml.png" alt="Bild">
     </div>
 
@@ -116,7 +121,8 @@
         <audio controls>
             <source src="Kiezmische_330ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer6','image-text6')">auflösen</button>
+        <button onclick="revealAnswer('answer6','image-text6','typ6')">auflösen</button>
+        <p id="typ6" style="display: none; font-size: 25px;">Alster</p>
         <p id="image-text6" style="display: none; font-size: 18px;">Kiezmische 330ml Ladentemperatur</p>
         <img id="answer6" class="answer-image" src="Kiezmische_330ml.png" alt="Bild">
     </div>
@@ -127,17 +133,20 @@
         <audio controls>
             <source src="Sprite_330ml.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="revealAnswer('answer7','image-text7')">auflösen</button>
+        <button onclick="revealAnswer('answer7','image-text7','typ7')">auflösen</button>
+        <p id="typ7" style="display: none; font-size: 25px;">Sprite</p>
         <p id="image-text7" style="display: none; font-size: 18px;">Sprite 330ml Ladentemperatur</p>
         <img id="answer7" class="answer-image" src="Sprite_330ml.png" alt="Bild">
     </div>
     
     <script>
-    function revealAnswer(answerId,imageId) {
+    function revealAnswer(answerId,imageId,typ) {
         const answerImage = document.getElementById(answerId);
         const imageText = document.getElementById(imageId);
+        const typText = document.getElementById(typ);
         answerImage.style.display = 'block';
         imageText.style.display = 'block';
+        typText.style.display = 'block';
     }
     </script>
 </body>
