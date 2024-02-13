@@ -139,6 +139,18 @@
         <img id="answer7" class="answer-image" src="Sprite_330ml.png" alt="Bild">
     </div>
     
+    <!-- Getränk 8 -->
+    <div class="drink-container" style="text-align: center;">
+        <h2>Getränk 8</h2>
+        <audio controls>
+            <source src="RedBull_Winter_BirneZimt_250ml.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="revealAnswer('answer8','image-text8','typ8')">auflösen</button>
+        <p id="typ8" style="display: none; font-size: 25px;">Energy</p>
+        <p id="image-text8" style="display: none; font-size: 18px;">RedBull Winteredition Birne Zimt 250ml Ladentemperatur</p>
+        <img id="answer8" class="answer-image" src="RedBull_Winter_BirneZimt_250ml.png" alt="Bild">
+    </div>
+    
     <script>
     function revealAnswer(answerId,imageId,typ) {
         const answerImage = document.getElementById(answerId);
